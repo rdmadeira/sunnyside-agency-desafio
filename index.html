@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <script src="./js/main.js"></script>
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -32,12 +32,12 @@
     <section class="creatives">
       <h1>We are creatives</h1>
       <picture>
-        <img src="./images/icon-arrow-down.svg" alt="">
+        <a href="#contenido" class="sieta"><img src="./images/icon-arrow-down.svg" alt="sieta apuntando para abajo"></a>
       </picture>
 
     </section>
   </header>
-  <main>
+  <main id="contenido">
     <section class="grid1">
       <article>
         <h2>Transform your </br> brand</h2>
@@ -99,7 +99,7 @@
           </picture>
           <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
           <h3>Emily R.</h3>
-          <p>Marketing Director</p>
+          <legend>Marketing Director</legend>
         </section>
         <section>
           <picture>
@@ -107,7 +107,7 @@
           </picture>
           <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
           <h3>Thomas S.</h3>
-          <p>Chief Operating Officer</p>
+          <legend>Chief Operating Officer</legend>
         </section>
         <section>
           <picture>
@@ -115,12 +115,43 @@
           </picture>
           <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
           <h3>Jennie F.</h3>
-          <p>Business Owner</p>
+          <legend>Business Owner</legend>
         </section>
       </div>
     </aside>
-
   </main>
+ 
+    <div class="solo-imagenes">
+        <div>
+          <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="botellas de leche">
+        </div>
+        <div>
+          <img src="./images/desktop/image-gallery-orange.jpg" alt="naranja-en-un-plato">
+        </div>
+        <div>
+          <img src="./images/desktop/image-gallery-cone.jpg" alt="cone-de-helado">
+        </div>
+        <div>
+          <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="cubos-de-azucar-apilados">
+        </div>
+    </div>
+    <footer>
+      <nav>
+      <ul>
+        <li>About</li>
+        <li>Services</li>
+        <li>Projects</li>
+        <li>Contact</li>
+      </ul>
+        
+  
+  
+  
+      </nav>
+
+    </footer>
+
+  
   
   
 
@@ -128,14 +159,12 @@
   
 
 
-  About
-  Services
-  Projects
-  Contact
+  
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+<script src="./js/main.js"></script>
 </html>

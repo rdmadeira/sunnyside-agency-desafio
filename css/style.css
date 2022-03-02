@@ -12,12 +12,16 @@
     --White: hsl(0, 0%, 100%);
     --Barlow: 'Barlow', sans-serif;
     --Fraunces: 'Fraunces', serif;
+    scroll-behavior:smooth;
 }
 * {
     box-sizing: border-box;
     margin: 0 0;
     padding: 0 0;
+    column-gap: 0px;
+    row-gap: 0px;
 }
+
 header {
     background-image:url(../images/desktop/image-header.jpg);
     background-size: cover;
@@ -31,6 +35,10 @@ header {
     align-items: center;
     padding: 40px 30px 10px;
 }
+ main#contenido {
+    transition-duration: 4s;
+    transition-property: all;
+} 
 
 .menu ul {
     list-style: none;
@@ -161,7 +169,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background: var(--Yellow);
+    background: var(--White);
     height: 100vh;
 }    
 .testimonials div {
@@ -187,10 +195,40 @@ main {
 }
 .testimonials div section {
     margin: 0vw 1vw;
+    
 }
+.testimonials section h3 {
+    margin: 0.8vw;
+    font-family: var(--Fraunces);
+    font-weight: 900;
+    color: var(--Verydarkdesaturatedblue);
+}
+.testimonials section legend {
+    font-family: var(--Barlow);
+    color: var(--Grayishblue);
+    font-weight: 600;
+    font-size: 1.3vw;
+} 
 .testimonials div section p {
     font-family: var(--Barlow);
     font-weight: 600;
     color: var(--Darkdesaturatedcyan);
     line-height: 3.5vh;
+    margin-bottom: 5.3vw;
     }
+.solo-imagenes {
+    display: flex;
+    width: 100%;
+}
+.solo-imagenes div {
+    width: 25%;
+    
+}
+.solo-imagenes div img {
+    width: 100%;
+}
+footer {
+    background-color: hsl(168deg 45% 69%);
+    width: 100%;
+    height: 40vh;
+}
