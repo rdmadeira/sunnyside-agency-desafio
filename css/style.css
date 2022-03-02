@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:wght@700;900&family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+:root {
+    --Darkblue: hsl(198, 62%, 26%); /* Fotography text */
+    --Softred: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Darkdesaturatedcyan: hsl(167, 40%, 24%); /* Graphic design text */
+    --Darkmoderatecyan: hsl(168, 34%, 41%); /* fOOTEr */
+    --Verydarkdesaturatedblue: hsl(212, 27%, 19%);
+    --Verydarkgrayishblue: hsl(213, 9%, 39%);
+    --Darkgrayishblue: hsl(232, 10%, 55%);
+    --Grayishblue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Barlow: 'Barlow', sans-serif;
+    --Fraunces: 'Fraunces', serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0 0;
+    padding: 0 0;
+}
+header {
+    background-image:url(../images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100vh;
+}
+.header_menu {
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    padding: 40px 30px 10px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul li {
+    margin-left: 45px;
+}
+.menu ul li a {
+    text-decoration: none;
+    padding: 10px;
+    color: var(--White);
+    font-family: var(--Barlow);
+    font-weight: 400;
+}
+.menu ul li span a {
+    background: var(--White);
+    color: black;
+    padding: 17px 25px 17px;
+    font-family: var(--Fraunces);
+    text-transform: uppercase;
+    font-size: 13px;
+    border-radius: 28px;
+    opacity: 0.8;
+}
+.menu ul li a:hover {
+    border-bottom: 1px;
+    border-color: var(--White);
+    border-bottom-style: ridge;
+}
+.menu ul li span a:hover {
+    opacity: 1;
+}
+.creatives {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: calc(100vh - 78px);
+}
+.creatives h1 {
+    position: absolute;
+    top: 12vh;
+    font-weight: 900;
+    color: var(--White);
+    text-transform: uppercase;
+    font-family: var(--Fraunces);
+    letter-spacing: 8px;    
+    font-size: 45px;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.grid1, .grid4{
+    padding: 0vw 6vw 0vw 7vw;
+    width: 50%;
+    height: 40.7vw;
+    background-color: var(--White);
+    color: var(--Verydarkdesaturatedblue);
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.grid1 h2, .grid4 h2 {
+    font-family: var(--Fraunces);
+    font-weight: 700;
+    font-size: 3vw;
+    margin-bottom: 2vw;
+}
+.grid1 p, .grid4 p {
+    font-family: var(--Barlow);
+    font-weight: 300;
+    font-size: 1.6vw;
+    line-height: 2.5vw;
+    margin-bottom: 2vw;
+}
+.grid1 div a, .grid4 div a{
+    margin: 30px 0px 0px 10px;
+    text-decoration: none;
+    color: var(--Verydarkdesaturatedblue);
+    font-family: var(--Fraunces);
+    font-weight: 900;
+    text-transform: uppercase;
+    border-bottom: 3px;
+    border-bottom: double;
+    border-color: var(--Softred);
+    font-size: 1.5vw;
+}
+.grid2, .grid3, .grid5, .grid6 {
+    width: 50%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;        
+}
+.grid2 div img, .grid3 div img, .grid5 div img, .grid6 div img  {
+    width: 100%;
+}
+.grid5 div div, .grid6 div div  {
+    color: var(--Darkdesaturatedcyan);
+    position: absolute;
+    bottom: 4vw;
+    text-align: center;
+    padding:0vw 12vw;
+}
+.grid5 div div h3, .grid6 div div h3 {
+    font-family: var(--Fraunces);
+    margin-bottom: 1.4vw;
+    font-size: 2vw;
+    font-weight: 900;
+}
+.grid5 div div p, .grid6 div div p {
+    font-family: var(--Barlow);
+    font-size: 1.1vw;
+    font-weight: 500;
+    line-height: 2vw;
+    text-shadow: 0px 6px 4px var(--Darkdesaturatedcyan);
+}
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: var(--Yellow);
+    height: 100vh;
+}    
+.testimonials div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+}
+.testimonials h2 {
+    margin-bottom: 4vw;
+    font-family: var(--Fraunces);
+    font-weight: 900;
+    color: var(--Darkgrayishblue);
+    font-size: 2vw;
+    letter-spacing: 0.6vw;
+    text-transform: uppercase;
+}
+.testimonials div picture img {
+    border-radius: 50%;
+    width: 25%;
+    margin-bottom: 5vw;
+}
+.testimonials div section {
+    margin: 0vw 1vw;
+}
+.testimonials div section p {
+    font-family: var(--Barlow);
+    font-weight: 600;
+    color: var(--Darkdesaturatedcyan);
+    line-height: 3.5vh;
+    }
