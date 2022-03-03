@@ -30,8 +30,10 @@
 }
 header {
     background-image:url(../images/desktop/image-header.jpg);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: bottom;
+    background-color: #3ebfff;
     width: 100%;
     height: 100vh;
 }
@@ -39,7 +41,10 @@ header {
     display: flex;
     justify-content:space-between ;
     align-items: center;
-    padding: 40px 30px 10px;
+    padding: 30px 30px 10px;
+}
+.logo {
+    width: 130px;
 }
  main#contenido {
     transition-duration: 4s;
@@ -86,7 +91,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - 78px);
 }
 .creatives h1 {
@@ -146,8 +151,12 @@ main {
     justify-content: flex-start;
     position: relative;        
 }
+.grid2>div, .grid3>div, .grid5>div, .grid6>div {
+    height: 100%;
+}
 .grid2 div img, .grid3 div img, .grid5 div img, .grid6 div img  {
     width: 100%;
+    height: 100%;
 }
 .grid5 div div, .grid6 div div  {
     color: var(--Darkdesaturatedcyan);
@@ -279,14 +288,31 @@ footer {
 }
 @media (max-width:720px) {
     .menu ul li a {
-        font-size: 2vw;
+        font-size: max(2.2vw, 10px);
+
     }
     .menu ul li span a {
-        font-size: 1.8vw;
-    padding: 1.5vw 2vw 1.5vw 2vw;
+        font-size: max(1.8vw, 10px);
+        padding: 2.3vw 3.2vw 2.5vw 3.5vw;
+
+    }
+    .header_menu {
+        padding-top: min(4.2vw, 30px);
+        padding-left: min(4.2vw,30px);
+        padding-right: min(4.2vw,30px);
     }
     .creatives h1 {
-        font-size: 5vw;
+        font-size: 6.2vw;
+        padding: 0px 5vw 0vw 5vw;
+        letter-spacing: 1vw;
+    }
+    .logo {
+        display: flex;
+        width: 17vw;
+        min-width: 70px;
+    }
+    .grid1 p, .grid4 p {
+        font-size: max(2vw, 9px);
     }
     
 }
