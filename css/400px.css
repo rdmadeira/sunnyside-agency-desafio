@@ -1,0 +1,70 @@
+@media (max-width:399px) and (orientation: portrait) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu ul {
+        display: none;
+    }
+    .menu>div {
+        width: 7vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu:hover>ul {
+        display: flex;
+    }
+    .menu ul li a {
+        font-size: max(2.2vw, 10px);
+    }
+    .menu ul li span a {
+        font-size: max(1.8vw, 10px);
+        padding: 2.3vw 3.2vw 2.5vw 3.5vw;
+    }
+    .header_menu {
+        padding-left: min(5.2vw,30px);
+        padding-right: min(5.2vw,30px);
+    }
+    .creatives h1 {
+        font-size: 6.2vw;
+        padding: 0px 5vw 0vw 5vw;
+        letter-spacing: 1vw;
+    }
+    .logo {
+        display: flex;
+        width: 32vw;
+    }
+    .grid1 p, .grid4 p {
+        font-size: max(2vw, 9px);
+    }
+    .grid5 div div, .grid6 div div {
+        padding: 0vw 6vw 0vw 6vw;
+    }
+    .grid5 div div p, .grid6 div div p {
+        font-size: 1.7vw;
+        line-height: 2.7vw;
+    }
+    .testimonials div {
+        flex-direction: column;
+        row-gap: 23px;
+    }
+    .testimonials h2 {
+        font-size: max(3.4vw,20px);
+    }
+    .testimonials div picture img {
+        width: 12%;
+        min-width: 48px;
+        margin-bottom: 0vw;
+    }
+    .testimonials div section p {
+        margin-bottom: 0px;
+    }
+    .testimonials div section h3 {
+        margin-bottom: 0vw;
+
+    }
+    .testimonials div section legend {
+        font-size: 2vw;
+    }
+}
