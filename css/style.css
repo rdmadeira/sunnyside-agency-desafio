@@ -161,7 +161,7 @@ main {
 .grid5 div div, .grid6 div div  {
     color: var(--Darkdesaturatedcyan);
     position: absolute;
-    bottom: 4vw;
+    top: 25.5vw;
     text-align: center;
     padding:0vw 12vw;
 }
@@ -173,7 +173,7 @@ main {
 }
 .grid5 div div p, .grid6 div div p {
     font-family: var(--Barlow);
-    font-size: 1.1vw;
+    font-size: max(1.1vw,12.5px);
     font-weight: 500;
     line-height: 2vw;
     text-shadow: 0px 6px 4px hsl(167deg 6% 48%);
@@ -183,7 +183,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
     background: var(--White);
     height: 100vh;
 }    
@@ -192,7 +192,8 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 80%;
+    width: 100%;
+    column-gap: 3vw;
 }
 .testimonials h2 {
     margin-bottom: 4vw;
@@ -230,6 +231,7 @@ main {
     color: var(--Darkdesaturatedcyan);
     line-height: 3.5vh;
     margin-bottom: 5.3vw;
+    font-size: max(1.2vw,12px);
     }
 .solo-imagenes {
     display: flex;
@@ -237,10 +239,11 @@ main {
 }
 .solo-imagenes div {
     width: 25%;
-    
+    height:100%      
 }
 .solo-imagenes div img {
     width: 100%;
+    height: 100%;
 }
 footer {
     background-color: hsl(168deg 45% 69%);
@@ -314,5 +317,33 @@ footer {
     .grid1 p, .grid4 p {
         font-size: max(2vw, 9px);
     }
-    
+    .grid5 div div, .grid6 div div {
+        padding: 0vw 6vw 0vw 6vw;
+    }
+    .grid5 div div p, .grid6 div div p {
+        font-size: 1.7vw;
+        line-height: 2.7vw;
+    }
+    .testimonials div {
+        flex-direction: column;
+        row-gap: 23px;
+    }
+    .testimonials h2 {
+        font-size: max(3.4vw,20px);
+    }
+    .testimonials div picture img {
+        width: 12%;
+        min-width: 48px;
+        margin-bottom: 0vw;
+    }
+    .testimonials div section p {
+        margin-bottom: 0px;
+    }
+    .testimonials div section h3 {
+        margin-bottom: 0vw;
+
+    }
+    .testimonials div section legend {
+        font-size: 2vw;
+    }
 }
