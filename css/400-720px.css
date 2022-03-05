@@ -3,11 +3,11 @@
         display: none;
     }
     
-    .menu ul li a {
+    .menu ~ div ul li a {
         font-size: max(2.2vw, 10px);
 
     }
-    .menu ul li span a {
+    .menu ~ div ul li span a {
         font-size: max(1.8vw, 10px);
         padding: 2.3vw 3.2vw 2.5vw 3.5vw;
 

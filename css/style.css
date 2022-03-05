@@ -54,23 +54,23 @@ header {
     transition-property: all;
 } 
 
-.menu ul {
+.menu ~ div ul {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.menu ul li {
+.menu ~ div ul li {
     margin-left: 2vw;
 }
-.menu ul li a {
+.menu ~ div ul li a {
     text-decoration: none;
     padding: 1vw;
     color: var(--White);
     font-family: var(--Barlow);
     font-weight: 400;
 }
-.menu ul li span a {
+.menu ~ div ul li span a {
     background: var(--White);
     color: black;
     padding: 17px 25px 17px;
@@ -80,12 +80,12 @@ header {
     border-radius: 28px;
     opacity: 0.8;
 }
-.menu ul li a:hover {
+.menu ~ div ul li a:hover {
     border-bottom: 1px;
     border-color: var(--White);
     border-bottom-style: ridge;
 }
-.menu ul li span a:hover {
+.menu ~ div ul li span a:hover {
     opacity: 1;
 }
 .creatives {
