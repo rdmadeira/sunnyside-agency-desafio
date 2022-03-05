@@ -52,6 +52,8 @@ header {
  main#contenido {
     transition-duration: 4s;
     transition-property: all;
+    justify-content: center;
+    align-items: center;
 } 
 
 .menu ~ div ul {

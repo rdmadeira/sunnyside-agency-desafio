@@ -87,6 +87,9 @@
         padding-left: min(6.2vw,30px);
         padding-right: min(6.2vw,30px);
     }
+    .creatives {
+        height: calc(88vh-9.12vh);
+    }
     .creatives h1 {
         font-size: 10.2vw;
         padding: 0px 5vw 0vw 5vw;
@@ -97,36 +100,88 @@
         display: flex;
         width: 32vw;
     }
+    #contenido {
+        flex-direction: column;
+    }
+    #contenido section {
+        width: 100%;
+    }
+    .grid1, .grid4 {
+        height: 83vw;
+    }
+    section>article {
+        text-align: center;
+    }
+    .grid1 h2, .grid4 h2 {
+        font-size: 8vw;
+    }
     .grid1 p, .grid4 p {
-        font-size: max(2vw, 9px);
+        font-size: 3.9vw;
+        line-height: 3.4vh;
+        font-weight: 500;
+        color: var(--Darkgrayishblue);
+        padding: 0vw 10vw;
+    }
+    .grid1 div a, .grid4 div a {
+        font-size: 4vw;
+    }
+    .grid2 {
+        order: -1;
+    }
+    .grid5 div img, .grid6 div img {
+        height: 90vh;
+        object-fit: cover;
+        object-position: center;        
     }
     .grid5 div div, .grid6 div div {
         padding: 0vw 6vw 0vw 6vw;
+        top: 57.5vh;
+    }
+    .grid5 div div h3, .grid6 div div h3 {
+        font-size: 7.4vw;
+        margin-bottom: 5vh;
     }
     .grid5 div div p, .grid6 div div p {
-        font-size: 1.7vw;
-        line-height: 2.7vw;
+        font-size: 4vw;
+        line-height: 4.6vh;
+        font-weight: 600;
+    }
+    .testimonials {
+        height: 191vh;
+        justify-content: flex-start;
     }
     .testimonials div {
         flex-direction: column;
-        row-gap: 23px;
+        row-gap: 65px;
     }
     .testimonials h2 {
-        font-size: max(3.4vw,20px);
+        font-size: 4.1vw;
+        color: var(--Grayishblue);
+        margin-bottom: 10vh;
+        margin-top: 9vh;
+        letter-spacing: 1vw;
     }
     .testimonials div picture img {
-        width: 12%;
-        min-width: 48px;
-        margin-bottom: 0vw;
+        width: 24%;
+        margin-bottom: 4vh;
     }
     .testimonials div section p {
-        margin-bottom: 0px;
+        margin-bottom: 4.5vh;
+        font-size: 4.5vw;
+        line-height: 4.9vh;
     }
     .testimonials div section h3 {
-        margin-bottom: 0vw;
+        margin-bottom: 1.4vh;
+        font-size: 5vw; 
 
     }
     .testimonials div section legend {
-        font-size: 2vw;
+        font-size: 3.5vw;
+    }
+    .solo-imagenes {
+        flex-wrap: wrap;
+    }
+    .solo-imagenes div {
+        width: 50%;
     }
 }
