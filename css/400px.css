@@ -108,6 +108,9 @@
     .creatives {
         height: calc(88vh-9.12vh);
     }
+    .creatives img {
+        width: 11vw;
+    }
     .creatives h1 {
         font-size: 10.2vw;
         padding: 0px 5vw 0vw 5vw;
