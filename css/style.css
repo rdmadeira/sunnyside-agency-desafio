@@ -158,6 +158,7 @@ main {
 }
 .grid2>div, .grid3>div, .grid5>div, .grid6>div {
     height: 100%;
+    line-height: 0px;
 }
 .grid2 div img, .grid3 div img, .grid5 div img, .grid6 div img  {
     width: 100%;
@@ -244,12 +245,25 @@ main {
 }
 .solo-imagenes div {
     width: 25%;
-    height:100%      
+    height:33vw;      
 }
-.solo-imagenes div img {
-    width: 100%;
-    height: 100%;
+#bottles {
+    background: url(../images/desktop/image-gallery-milkbottles.jpg);
+    background-repeat: round;
 }
+#orange {
+    background: url(../images/desktop/image-gallery-orange.jpg);
+    background-repeat: round;
+}
+#cone {
+    background: url(../images/desktop/image-gallery-cone.jpg);
+    background-repeat: round;
+}
+#cubes {
+    background: url(../images/desktop/image-gallery-sugarcubes.jpg);
+    background-repeat: round;
+}
+
 footer {
     background-color: hsl(168deg 45% 69%);
     width: 100%;

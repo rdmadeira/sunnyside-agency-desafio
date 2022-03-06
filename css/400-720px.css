@@ -42,23 +42,29 @@
         font-size: 1.7vw;
         line-height: 2.7vw;
     }
+    .testimonials {
+        justify-content: start;
+        padding: 8vw 2vw;
+        height: max-content;
+    }
     .testimonials div {
         flex-direction: column;
-        row-gap: 23px;
+        row-gap: 9vw;
     }
     .testimonials h2 {
         font-size: max(3.4vw,20px);
+        margin: 0vw 0vw 7vw 0vw;
     }
     .testimonials div picture img {
         width: 12%;
         min-width: 48px;
-        margin-bottom: 0vw;
+        margin-bottom: 4vw;
     }
     .testimonials div section p {
         margin-bottom: 0px;
     }
     .testimonials div section h3 {
-        margin-bottom: 0vw;
+        margin-bottom: 1vw;
 
     }
     .testimonials div section legend {

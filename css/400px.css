@@ -52,26 +52,44 @@
         flex-direction: column;
     }
     .menu:hover ~ div#menu-flotante {
-        display: flex;
         flex-direction: column;
-    }
-    #menu-flotante {
+        visibility: visible;
+        opacity: 1;
         top: 15vh;
-        left: calc(50vw - 85vw/2);
-        display: none;
-        flex-direction: row;
+    }
+    
+    #menu-flotante {
+        top: -16vh;
+        display: flex;
+        visibility: hidden;
         justify-content: center;
         align-items: center;
-        width: 87vw;
+        width: 80vw;
+        left: calc((100vw - 80vw)/2);
         position: absolute;
-        height: 35vh;
+        padding: 6.4vh 0vw;
         background: var(--White);
         z-index: 1;
+        opacity: 0;
+        overflow-x: clip;
+        transition-delay: 0.3s;
+        transition: top 0.5s, opacity 0.5s linear; 
+    }
+    #menu-flotante::before {
+        background: var(--White);
+        content: "";
+        position: absolute;
+        top: -6vh;
+        height: 20vw;
+        right: -35px;
+        width: calc(20% + 0em);
+        transform: skew(-45deg);
+        
     }
     #menu-flotante ul {
         display: flex;
         flex-direction: column;
-        row-gap: 5vh;
+        row-gap: 8vh;
     }
     #menu-flotante ul li > a {
         font-size: max(2.2vw, 15px);
@@ -147,8 +165,9 @@
         font-weight: 600;
     }
     .testimonials {
-        height: 191vh;
-        justify-content: flex-start;
+        justify-content: start;
+        padding: 17vw 0vw 20vw;
+        height: max-content;
     }
     .testimonials div {
         flex-direction: column;
@@ -158,7 +177,6 @@
         font-size: 4.1vw;
         color: var(--Grayishblue);
         margin-bottom: 10vh;
-        margin-top: 9vh;
         letter-spacing: 1vw;
     }
     .testimonials div picture img {
@@ -167,7 +185,7 @@
     }
     .testimonials div section p {
         margin-bottom: 4.5vh;
-        font-size: 4.5vw;
+        font-size: min(4.5vw,14.5px);
         line-height: 4.9vh;
     }
     .testimonials div section h3 {
@@ -183,5 +201,38 @@
     }
     .solo-imagenes div {
         width: 50%;
+        height: 50vw;
+    }
+    #bottles {
+        background: url(../images/mobile/image-gallery-milkbottles.jpg);
+        background-repeat: round;
+    }
+    #orange {
+        background: url(../images/mobile/image-gallery-orange.jpg);
+        background-repeat: round;
+    }
+    #cone {
+        background: url(../images/mobile/image-gallery-cone.jpg);
+        background-repeat: round;
+    }
+    #cubes {
+        background: url(../images/mobile/image-gallery-sugar-cubes.jpg);
+        background-repeat: round;
+    }
+    footer {
+        height: max-content;
+        padding: 17vw 0vw;
+    }
+    .menu-footer {
+        row-gap: 16vw;
+    }
+    .menu-footer ul li a {
+        font-size: 5vw;
+    }
+    .menu-footer div#div1 img {
+        width: 48vw;
+    }
+    .menu-footer div.redes-sociales img {
+        width: 92%;
     }
 }
